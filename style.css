@@ -86,6 +86,116 @@ body{
     display: flex;
     justify-content: center;  
 }
+.restaurants_description{
+    font-size: 30px;
+    color:#1d3557 ;
+    text-align: center;
+    margin:20px 0;
+}
+.restaurants_flex_row_one,.restaurants_flex_row_two{
+    width: 100%;
+    display: flex;
+    gap: 4px;
+    
+}
+.restaurants_flex_row_one{
+    align-items:baseline;
+    margin-bottom:4px;
+}
+.restaurant_1,.restaurant_4{
+    width: 100%;
+    height: 150px;
+    border-radius:7px;
+}
+.restaurant_2,.restaurant_3{
+    width: 120%;
+    height: 200px;
+    border-radius:7px;
+}
+.restaurant_1_image, .restaurant_2_image, .restaurant_3_image, .restaurant_4_image{
+    width: 100%;
+    height: 100%;
+    border-radius:7px;
+}
+
+    
+.input_quote_section, .input_quote_section_input_button,.input_quote_section_bar_container,.input_quote_section_bar,.input_quote_section_button_container,.input_quote_section_button{
+    width: 100%;
+}
+.input_quote_section_input_button{
+    margin-top: -15px;
+}
+.input_quote_section_bar_container{
+    padding:5px 75px;
+}
+.input_quote_section_bar{
+    height: 35px;
+    border-radius: 5px;
+    border: 1.8px solid #ff512f;
+    background-color:#ffe4f2  ;
+}
+.input_quote_section_button_container{
+    padding:0 110px;
+}
+.input_quote_section_text{
+    font-size: 30px;
+    color:#1d3557 ;
+    text-align: center;
+    margin:20px 0;
+
+}
+.quote_section_text_container_main{
+    width: 100%;
+
+}
+
+.quote_section_text_container{
+    width: 100%;
+    margin-top: 50px;
+    height: 400px;
+    position:relative;
+    text-align: center;
+    padding: auto;
+
+}
+.quote_image{
+    width: 100%;
+    border-radius: 5px;
+    height: 35%;
+    
+}
+.quote_section_text{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.ground_base{
+    width: 100%;
+}
+.base_element_container{
+    width: 100%;
+    background-image:linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2478 51%,
+        #ff512f 100%
+    ) ;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    gap: 30px;
+}
+.site_name{
+    font-size:50px;
+    font-weight: bolder;
+}
+
 
 @media(min-width:768px){
     .navbar{
@@ -133,7 +243,7 @@ body{
         background-image:linear-gradient(
         to right,
         #ff512f 0%,
-        #dd2478 51%,
+        #dd2478  51%,
         #ff512f 100%
     ) ;
         z-index:-3;
@@ -150,7 +260,37 @@ body{
         margin-bottom: 30px;
 
     }
-    
+    .restaurants_description{
+        font-size: 40px;
+        width: 100%;
+    }
+    .restaurants_container {
+        display: flex;
+        align-items: center;
+    }
+    .restaurants_flex{
+        width: 100%;
+    }
+    .quote_section_text{
+        padding: 50px;
+    }
+    .input_quote_section_input_button{
+        display: flex;
+        width: 100%;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+    .input_quote_section_bar_container{
+        width: 100%;
+        padding: 0 50px;
+    }.input_quote_section_bar{
+        width: 200%;
+        
+    }
+    .input_quote_section_button_container{
+        padding: 0 130px;
+    }
     
 
 }
@@ -168,11 +308,46 @@ body{
     .explore_menu_text{
        font-size: 50px; 
     }
+    .restaurants_container{
+        margin-top:30px ;
+    }
+    .input_quote_section_input_button{
+        display: flex;
+        width: 100%;
+        gap: 80px;
+        align-items: center;
+        justify-content: center;
+    }
     
 }
 @media(min-width:1400px){
    .container{
     max-width: 1250px;
    }
+   .input_quote_section_input_button{
+    display: flex;
+    width: 100%;
+    gap: 200px;
+    align-items: center;
+    justify-content: center;
+}
+    .quote_image{
+    width: 100%;
+    border-radius: 5px;
+    height: 60%;
+    
+}
+    .quote_section_text{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    color: white;
+    text-align: center;
+    padding: 70px 10px;
+    font-size: 20px;
+    
+}
+    
+
     
 }
